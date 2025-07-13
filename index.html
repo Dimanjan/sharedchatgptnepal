@@ -24,8 +24,99 @@
         @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
         .cta-button{background:linear-gradient(90deg,#25D366 0%,#20ba5a 100%);color:#fff;border:none;padding:.8rem 2rem;font-size:1.1rem;border-radius:30px;cursor:pointer;font-weight:600;box-shadow:0 4px 20px rgba(0,0,0,.1);transition:all .2s ease;font-family:inherit;text-decoration:none;display:inline-flex;align-items:center}
         .cta-button:hover{transform:translateY(-2px);box-shadow:0 6px 25px rgba(0,0,0,.15)}
-        .whatsapp-hero{background:#25D366;box-shadow:0 4px 20px rgba(37,211,102,.3)}
+        .whatsapp-hero{background:#25D366;box-shadow:0 4px 20px rgba(37,211,102,.3);width:100%;max-width:400px;margin:0 auto 1rem;display:block;text-align:center;justify-content:center;font-size:1.3rem;padding:1rem 2rem}
         .whatsapp-hero:hover{background:#20ba5a;box-shadow:0 6px 25px rgba(37,211,102,.4)}
+        .secondary-buttons{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-top:1rem}
+        .facebook-hero, .facebook-contact, .facebook-footer {
+            background: linear-gradient(90deg, #1877f2 0%, #145db2 100%);
+            color: #fff;
+            border: none;
+            padding: .8rem 2rem;
+            font-size: 1.1rem;
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: 600;
+            box-shadow: 0 4px 20px rgba(24,119,242,.15);
+            transition: all .2s ease;
+            font-family: inherit;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            margin-left: 1rem;
+        }
+        .facebook-hero:hover, .facebook-contact:hover, .facebook-footer:hover {
+            background: #145db2;
+            box-shadow: 0 6px 25px rgba(24,119,242,.25);
+            color: #fff;
+            text-decoration: none;
+        }
+        .facebook-icon {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+            fill: #fff;
+            vertical-align: middle;
+        }
+        .messenger-hero, .messenger-contact, .messenger-footer {
+            background: linear-gradient(90deg, #00b2ff 0%, #0084cc 100%);
+            color: #fff;
+            border: none;
+            padding: .6rem 1.5rem;
+            font-size: .95rem;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: 600;
+            box-shadow: 0 4px 20px rgba(0,178,255,.15);
+            transition: all .2s ease;
+            font-family: inherit;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            margin: 0;
+        }
+        .messenger-hero:hover, .messenger-contact:hover, .messenger-footer:hover {
+            background: #0084cc;
+            box-shadow: 0 6px 25px rgba(0,178,255,.25);
+            color: #fff;
+            text-decoration: none;
+        }
+        .messenger-icon {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+            fill: #fff;
+            vertical-align: middle;
+        }
+        .group-hero, .group-contact, .group-footer {
+            background: linear-gradient(90deg, #4267B2 0%, #365899 100%);
+            color: #fff;
+            border: none;
+            padding: .6rem 1.5rem;
+            font-size: .95rem;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: 600;
+            box-shadow: 0 4px 20px rgba(66,103,178,.15);
+            transition: all .2s ease;
+            font-family: inherit;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            margin: 0;
+        }
+        .group-hero:hover, .group-contact:hover, .group-footer:hover {
+            background: #365899;
+            box-shadow: 0 6px 25px rgba(66,103,178,.25);
+            color: #fff;
+            text-decoration: none;
+        }
+        .group-icon {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+            fill: #fff;
+            vertical-align: middle;
+        }
         
         /* Pricing Section */
         .pricing{padding:4rem 2rem;background:#1a1a2e;text-align:center}
@@ -113,6 +204,20 @@
                     </svg>
                     Join on WhatsApp
                 </a>
+                <div class="secondary-buttons">
+                    <a href="https://m.me/61566972780483" target="_blank" rel="noopener noreferrer" class="cta-button messenger-hero">
+                        <svg class="messenger-icon" viewBox="0 0 24 24">
+                            <path d="M12 0C5.373 0 0 4.925 0 11c0 3.368 1.72 6.375 4.406 8.25L3.5 24l5.25-3.5C9.5 21.5 10.75 22 12 22c6.627 0 12-4.925 12-11S18.627 0 12 0zm0 20c-1.25 0-2.5-.5-3.5-1.25L6 20l1.25-2.5C5.5 16.125 4.5 13.625 4.5 11c0-4.125 3.375-7.5 7.5-7.5s7.5 3.375 7.5 7.5-3.375 7.5-7.5 7.5z"/>
+                        </svg>
+                        Messenger
+                    </a>
+                    <a href="https://www.facebook.com/groups/chatgptnepal/join" target="_blank" rel="noopener noreferrer" class="cta-button group-hero">
+                        <svg class="group-icon" viewBox="0 0 24 24">
+                            <path d="M16 4c0-1.11.89-2 2-2s2 .89 2 2-.89 2-2 2-2-.89-2-2zm4 18v-6h2.5l-2.54-7.63A1.5 1.5 0 0 0 18.54 8H17c-.8 0-1.54.37-2.01 1l-1.7 2.26A6.003 6.003 0 0 0 10 16v6h10zm-8-2v-4c0-1.1.9-2 2-2s2 .9 2 2v4h-4zM8 4c0-1.11.89-2 2-2s2 .89 2 2-.89 2-2 2-2-.89-2-2zm0 18v-6h2v6H8zm-4-2v-4c0-1.1.9-2 2-2s2 .9 2 2v4H4z"/>
+                        </svg>
+                        Join Facebook Group
+                    </a>
+                </div>
             </div>
         </section>
 
@@ -274,6 +379,12 @@
                 </svg>
                 Join on WhatsApp
             </a>
+            <a href="https://m.me/61566972780483" target="_blank" rel="noopener noreferrer" class="whatsapp-button messenger-contact">
+                <svg class="messenger-icon" viewBox="0 0 24 24">
+                    <path d="M12 0C5.373 0 0 4.925 0 11c0 3.368 1.72 6.375 4.406 8.25L3.5 24l5.25-3.5C9.5 21.5 10.75 22 12 22c6.627 0 12-4.925 12-11S18.627 0 12 0zm0 20c-1.25 0-2.5-.5-3.5-1.25L6 20l1.25-2.5C5.5 16.125 4.5 13.625 4.5 11c0-4.125 3.375-7.5 7.5-7.5s7.5 3.375 7.5 7.5-3.375 7.5-7.5 7.5z"/>
+                </svg>
+                Messenger
+            </a>
             <div class="qr-section">
                 <img src="QR.JPG" alt="eSewa QR Code" class="qr-image">
                 <div class="qr-caption">Scan to contribute your share with eSewa. After sending your contribution, share a screenshot in WhatsApp to join the community.</div>
@@ -298,5 +409,27 @@
             </div>
         </section>
     </div>
+<!-- Footer -->
+<footer style="background:#16213e;padding:1.5rem 0;text-align:center;margin-top:2rem;">
+    <a href="https://www.facebook.com/profile.php?id=61566972780483" target="_blank" rel="noopener noreferrer" class="cta-button facebook-footer" style="margin-bottom:1rem;">
+        <svg class="facebook-icon" viewBox="0 0 24 24" style="width:24px;height:24px;margin-right:10px;fill:#fff;vertical-align:middle;">
+            <path d="M22.675 0h-21.35C.595 0 0 .592 0 1.326v21.348C0 23.408.595 24 1.325 24h11.495v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.797.143v3.24l-1.918.001c-1.504 0-1.797.715-1.797 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116C23.406 24 24 23.408 24 22.674V1.326C24 .592 23.406 0 22.675 0"/>
+        </svg>
+        Facebook Page
+    </a>
+    <a href="https://m.me/61566972780483" target="_blank" rel="noopener noreferrer" class="cta-button messenger-footer" style="margin-bottom:1rem;">
+        <svg class="messenger-icon" viewBox="0 0 24 24" style="width:24px;height:24px;margin-right:10px;fill:#fff;vertical-align:middle;">
+            <path d="M12 0C5.373 0 0 4.925 0 11c0 3.368 1.72 6.375 4.406 8.25L3.5 24l5.25-3.5C9.5 21.5 10.75 22 12 22c6.627 0 12-4.925 12-11S18.627 0 12 0zm0 20c-1.25 0-2.5-.5-3.5-1.25L6 20l1.25-2.5C5.5 16.125 4.5 13.625 4.5 11c0-4.125 3.375-7.5 7.5-7.5s7.5 3.375 7.5 7.5-3.375 7.5-7.5 7.5z"/>
+        </svg>
+        Messenger
+    </a>
+    <a href="https://www.facebook.com/groups/chatgptnepal/join" target="_blank" rel="noopener noreferrer" class="cta-button group-footer" style="margin-bottom:1rem;">
+        <svg class="group-icon" viewBox="0 0 24 24" style="width:24px;height:24px;margin-right:10px;fill:#fff;vertical-align:middle;">
+            <path d="M16 4c0-1.11.89-2 2-2s2 .89 2 2-.89 2-2 2-2-.89-2-2zm4 18v-6h2.5l-2.54-7.63A1.5 1.5 0 0 0 18.54 8H17c-.8 0-1.54.37-2.01 1l-1.7 2.26A6.003 6.003 0 0 0 10 16v6h10zm-8-2v-4c0-1.1.9-2 2-2s2 .9 2 2v4h-4zM8 4c0-1.11.89-2 2-2s2 .89 2 2-.89 2-2 2-2-.89-2-2zm0 18v-6h2v6H8zm-4-2v-4c0-1.1.9-2 2-2s2 .9 2 2v4H4z"/>
+        </svg>
+        Join Facebook Group
+    </a>
+    <div style="color:#fff;opacity:.7;font-size:.95rem;margin-top:.5rem;">&copy; 2025 ChatGPT Shared Nepal. Community-powered. Not affiliated with OpenAI.</div>
+</footer>
 </body>
 </html>
